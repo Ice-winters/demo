@@ -17,7 +17,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer{
     // 注册端点，发布或者订阅消息的时候需要先连接这个端点
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-        registry.addEndpoint("/endpoint-websocket").setAllowedOrigins("*", "/mayufeng").withSockJS();
+        registry.addEndpoint("/endpoint-websocket").setAllowedOrigins("*").withSockJS();
     }
 
     @Override
